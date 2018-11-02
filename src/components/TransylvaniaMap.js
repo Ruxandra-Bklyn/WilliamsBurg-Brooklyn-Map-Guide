@@ -3,7 +3,7 @@ import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
 
 const MAP_KEY = "AIzaSyBMAfzFE8WfGm633IdIuvrRPbtQkuoga4s";
 
-class MapDisplay extends Component {
+class TransylvaniaMap extends Component {
     
     state = {
         map: null
@@ -44,7 +44,7 @@ render = () => {
 }
     
 }
-export default GoogleApiWrapper({apiKey: MAP_KEY})(MapDisplay)
+export default GoogleApiWrapper({apiKey: MAP_KEY})(TransylvaniaMap)
 
 
 

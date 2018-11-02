@@ -30,3 +30,9 @@
     transform: rotate(360deg);
   }
 }
+h1{
+    font-family: 'Berkshire Swash', cursive;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}

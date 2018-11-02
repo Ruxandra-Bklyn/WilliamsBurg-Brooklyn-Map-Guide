@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import locations from './data/locations.json';
-import MapDisplay from './components/MapDisplay';
+import TransylvaniaMap from './components/TransylvaniaMap';
 
 
 
@@ -20,9 +20,9 @@ class App extends Component {
       <div className="App">
         
           <div>
-        <h1>Transylvania's Must See Fortified Churches</h1>
+        <h1>Transylvania's Fortified Churches</h1>
         </div>
-          <MapDisplay
+          <TransylvaniaMap
         lat={this.state.lat}
         lng={this.state.lng}
         zoom={this.state.zoom}
