@@ -6,8 +6,8 @@
         "period": "Biertan Church was erected between 1486 and 1524",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 46.135187,
-            lng: 24.521308
+            "lat": 46.135187,
+            "lng": 24.521308
         }
 },
 
@@ -18,8 +18,8 @@
         "period": "Calnic Church was first documented in 1269",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 45.8891,
-            lng: 23.660343
+            "lat": 45.886111,
+            "lng": 23.660343
         }
     },
 
@@ -30,8 +30,8 @@
         "period": "Church of Cisnadie was built in the 12th century and was fortified during the 15th century",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 45.713128,
-            lng: 24.151123
+            "lat": 45.713128,
+            "lng": 24.151123
         }
     },
 
@@ -42,8 +42,8 @@
         "period": "Church of Darjiu was built in 14th century, and was fortified in the 16th century",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 46.202071,
-            lng: 25.199178
+            "lat": 46.202071,
+            "lng": 25.199178
         }
     },
 
@@ -54,8 +54,8 @@
         "period": "Harman Church dates from the 13th century",
         "landmarkStatus": "HUNESCO World Heritage Site",
         "coordinates": {
-            lat: 45.715647,
-            lng: 25.685252
+            "lat": 45.715647,
+            "lng": 25.685252
         }
     },
 
@@ -66,8 +66,8 @@
         "period": "Prejmer Church was built in 1212-1213",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 45.7220118,
-            lng: 25.773741
+            "lat": 45.7220118,
+            "lng": 25.773741
         }
     },
 
@@ -78,8 +78,8 @@
         "period": "Church of Saschiz was built between 1493 and 1496",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 46.194123,
-            lng: 24.960085
+            "lat": 46.194123,
+            "lng": 24.960085
         }
     },
 
@@ -90,8 +90,8 @@
         "period": "The Church of Valea Viilor was built 1263 and was fortified in the 15th and 16th centuries",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 46.083309,
-            lng: 24.27686
+            "lat": 46.083309,
+            "lng": 24.27686
         }
     },
 
@@ -102,8 +102,8 @@
         "period": "Viscri Church was built around 1100-1120",
         "landmarkStatus": "UNESCO World Heritage Site",
         "coordinates": {
-            lat: 46.054891,
-            lng: 25.08843
+            "lat": 46.054891,
+            "lng": 25.08843
         }
     }
 ]
