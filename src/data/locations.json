@@ -1,0 +1,58 @@
+[
+    {
+        "landmark": "Dacian Fortresses of the Orastie Mountains",
+        "location": "Orastie Mountains, Transylvania - Central Romania",
+        "built": "Dacian Fortresses were built in the 1st centuries B.C. and A.D. under Dacian rule",
+       "landmarkStatus": "UNESCO World Heritage Site",
+        "fact": "The well-preserved remains of these fortresses show an unusual fusion of military and religious architectural techniques and concepts from the classical world and the late European Iron Age.",
+        "position": {lat: 45.7493, lng: 22.8883}
+    },
+    
+    {
+        "landmark": "Monastery of Horezu",
+        "location": "Horezu, Walachia – Southern Romania",
+        "built": "Horezu was built in 1690 by Prince Constantine Brancoveanu.",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "fact": "The Monastery of Horezu is considered the masterpiece of the Brancovan style and is a synthesis of Byzantine and Northern Italian Renaissance architecture." ,
+        "position": {lat: 45.1699, lng: 24.007295}
+    },
+    
+    {  
+        "landmark": "Prejmer Fortified Church",
+        "location": "Prejmer, Transylvania - Central Romania",
+        "built": "Prejmer was built by Teutonic knights in 1212-1213",
+       "landmarkStatus": "UNESCO World Heritage Site",
+       "fact": "Prejmer is largest fortified church in southeastern Europe and was practically impenetrable. It was besieged 50 times. It was surrendered once due to lack of water.",
+       "position": {lat: 45.722012, lng: 25.773741}
+    },
+    
+    {
+    
+   "landmark": "Historic Centre of Sighisoara",
+    "location": "Sighisoara, Transylvania - Central Romania",
+    "built": "Sighisoara's historic center was founded in the 13th century by German craftsmen and merchants known as the Saxons of Transylvania",
+    "landmarkStatus": "UNESCO World Heritage Site",
+    "fact": "Sighisoara is an outstanding example of a small fortified city in the border region between the Latin-oriented culture of central Europe and the Byzantine-Orthodox culture of south-eastern Europe." ,
+    "position": {lat: 46.2198, lng: 24.7920},
+    },
+     
+    {
+        "landmark": "Voronet Monastery",
+        "location": "Bucovina, Moldavia -Northeastern Romania",
+        "established": "Voronet Monastery was built in 1488 by ruler Stefan the Great.",
+        "landmarkStatus": "UNESCO World Heritage Site",
+       "fact": "Voronet Monastery is also known as The Sistine Chapel of the East.",
+      "position": {lat: 47.517072, lng: 25.864167},
+
+    },
+    {
+    "landmark": "Sucevita Monastery",
+    "location": "Sucevita, Moldavia - Northeastern Romania",
+    "established": "Sucevita was in the last two decades of the 16th century by Movila brothers.",
+    "landmarkStatus": "UNESCO World Heritage Site",
+    "fact": "The Movilag brothers were great-grandsons of Stefan the Great.",
+    "position": {lat: 47.778125, lng: 25.711282}
+    }
+      
+       
+]
