@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         
           <div>
-        <h1>Fortified Churches</h1>
+        <h1>Transylvania's Must See Fortified Churches</h1>
         </div>
           <MapDisplay
         lat={this.state.lat}

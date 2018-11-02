@@ -1,58 +1,109 @@
 [
     {
-        "landmark": "Dacian Fortresses of the Orastie Mountains",
-        "location": "Orastie Mountains, Transylvania - Central Romania",
-        "built": "Dacian Fortresses were built in the 1st centuries B.C. and A.D. under Dacian rule",
-       "landmarkStatus": "UNESCO World Heritage Site",
-        "fact": "The well-preserved remains of these fortresses show an unusual fusion of military and religious architectural techniques and concepts from the classical world and the late European Iron Age.",
-        "position": {lat: 45.7493, lng: 22.8883}
-    },
-    
-    {
-        "landmark": "Monastery of Horezu",
-        "location": "Horezu, Walachia – Southern Romania",
-        "built": "Horezu was built in 1690 by Prince Constantine Brancoveanu.",
+        "landmark": "The Fortified Church of Biertan",
+        "location": "Biertan, Transylvania",
+        "zipcode": 557045,
+        "period": "Biertan Church was erected between 1486 and 1524",
         "landmarkStatus": "UNESCO World Heritage Site",
-        "fact": "The Monastery of Horezu is considered the masterpiece of the Brancovan style and is a synthesis of Byzantine and Northern Italian Renaissance architecture." ,
-        "position": {lat: 45.1699, lng: 24.007295}
-    },
-    
-    {  
-        "landmark": "Prejmer Fortified Church",
-        "location": "Prejmer, Transylvania - Central Romania",
-        "built": "Prejmer was built by Teutonic knights in 1212-1213",
-       "landmarkStatus": "UNESCO World Heritage Site",
-       "fact": "Prejmer is largest fortified church in southeastern Europe and was practically impenetrable. It was besieged 50 times. It was surrendered once due to lack of water.",
-       "position": {lat: 45.722012, lng: 25.773741}
-    },
-    
-    {
-    
-   "landmark": "Historic Centre of Sighisoara",
-    "location": "Sighisoara, Transylvania - Central Romania",
-    "built": "Sighisoara's historic center was founded in the 13th century by German craftsmen and merchants known as the Saxons of Transylvania",
-    "landmarkStatus": "UNESCO World Heritage Site",
-    "fact": "Sighisoara is an outstanding example of a small fortified city in the border region between the Latin-oriented culture of central Europe and the Byzantine-Orthodox culture of south-eastern Europe." ,
-    "position": {lat: 46.2198, lng: 24.7920},
-    },
-     
-    {
-        "landmark": "Voronet Monastery",
-        "location": "Bucovina, Moldavia -Northeastern Romania",
-        "established": "Voronet Monastery was built in 1488 by ruler Stefan the Great.",
-        "landmarkStatus": "UNESCO World Heritage Site",
-       "fact": "Voronet Monastery is also known as The Sistine Chapel of the East.",
-      "position": {lat: 47.517072, lng: 25.864167},
+        "coordinates": {
+            lat: 46.135187,
+            lng: 24.521308
+        }
+},
 
-    },
     {
-    "landmark": "Sucevita Monastery",
-    "location": "Sucevita, Moldavia - Northeastern Romania",
-    "established": "Sucevita was in the last two decades of the 16th century by Movila brothers.",
-    "landmarkStatus": "UNESCO World Heritage Site",
-    "fact": "The Movilag brothers were great-grandsons of Stefan the Great.",
-    "position": {lat: 47.778125, lng: 25.711282}
+        "landmark": "The Fortified Church of Calnic",
+        "location": "Calnic, Alba county",
+        "zipcode": 517205,
+        "period": "Calnic Church was first documented in 1269",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 45.8891,
+            lng: 23.660343
+        }
+    },
+
+    {
+        "landmark": "The Fortified Church of Cisnadie",
+        "location": "Cisnadie, Transylvania",
+        "zipcode": 555300,
+        "period": "Church of Cisnadie was built in the 12th century and was fortified during the 15th century",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 45.713128,
+            lng: 24.151123
+        }
+    },
+
+    {
+        "landmark": "The Fortified Church of Darjiu",
+        "location": "CDarju, Harghita county",
+        "zipcode": 537075,
+        "period": "Church of Darjiu was built in 14th century, and was fortified in the 16th century",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 46.202071,
+            lng: 25.199178
+        }
+    },
+
+    {
+        "landmark": "The Fortified Church of Harman",
+        "location": "Harman, Brasov County",
+        "zipcode": 507085,
+        "period": "Harman Church dates from the 13th century",
+        "landmarkStatus": "HUNESCO World Heritage Site",
+        "coordinates": {
+            lat: 45.715647,
+            lng: 25.685252
+        }
+    },
+
+    {
+        "landmark": "Fortified Church of Prejmer",
+        "location": "Prejmer, Brasov County",
+        "zipcode": 507165,
+        "period": "Prejmer Church was built in 1212-1213",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 45.7220118,
+            lng: 25.773741
+        }
+    },
+
+    {
+        "landmark": "The Fortified Church of Saschiz",
+        "location": "Saschiz, Mures County",
+        "zipcode": 547510,
+        "period": "Church of Saschiz was built between 1493 and 1496",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 46.194123,
+            lng: 24.960085
+        }
+    },
+
+    {
+        "landmark": "Fortified Church of Valea Viilor",
+        "location": "Valea Viilor, Sibiu county",
+        "zipcode": 557290,
+        "period": "The Church of Valea Viilor was built 1263 and was fortified in the 15th and 16th centuries",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 46.083309,
+            lng: 24.27686
+        }
+    },
+
+    {
+        "landmark": "Fortified Church of Viscri",
+        "location": "Viscri, Brasov County",
+        "zipcode": 507039,
+        "period": "Viscri Church was built around 1100-1120",
+        "landmarkStatus": "UNESCO World Heritage Site",
+        "coordinates": {
+            lat: 46.054891,
+            lng: 25.08843
+        }
     }
-      
-       
 ]
