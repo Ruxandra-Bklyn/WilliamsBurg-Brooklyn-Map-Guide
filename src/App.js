@@ -1,33 +1,29 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import locations from './data/locations.json';
-import TransylvaniaMap from './components/TransylvaniaMap';
-
+//import locations from './data/locations.json';
+import MyMap from './components/MyMap';
+//import axios from 'axios';
+import squareAPI from "./API"
 
 
 class App extends Component {
-    state = {
-        lat: 47.239043,
-        lng:  25.590897,
-        zoom: 14,
-        all: locations
+    componentDidMount(){
+        squareAPI.search({
+          near: "Biertan, Transylvania, Romania",
+          query: " biserica fortificata",
+          limit: 20
+          
+            
+        }).then(results => console.log(results));
     }
-    
     
   render = () => {
     return (
-      <div className="App">
         
-          <div>
-        <h1>Transylvania's Fortified Churches</h1>
-        </div>
-          <TransylvaniaMap
-        lat={this.state.lat}
-        lng={this.state.lng}
-        zoom={this.state.zoom}
-        locations={this.state.all}/>
-        </div>
+      <div className="App">
+        <div><h1>The Fortified Churches of Transylvania: A Map Guide</h1> </div>  
+        <MyMap {...this.state }/>
+          </div>    
     );
   }
 }
