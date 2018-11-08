@@ -7,9 +7,11 @@ class Helper {
     static auth(){
         
         const keys = {
+            
             client_id: "V04AOMKZDTEANRKBVGOKDLEDTRV4WPGE54SIC0YAVYHPMPYF",
             client_secret: "RJ3K1JPYIYPMK3DG3EBRXPDUNBBJEI405QASX3MWA15WNYPV",
             v:"20181107"
+            
         };
         
         return Object.keys(keys)
@@ -18,7 +20,7 @@ class Helper {
     }
     static urlBuilder(urlParameters){
         if(!urlParameters){
-            return""
+            return ""
         }
         return Object.keys(urlParameters)
         .map(key =>`${key}=${urlParameters[key]}`)
@@ -26,7 +28,7 @@ class Helper {
     }
 static headers() {
     return {
-        Accept:"application/Json"
+        Accept:"application/json"
       };
     }
     
@@ -35,11 +37,8 @@ static headers() {
             method,
             headers: Helper.headers()
         };
-        return fetch(`${Helper.baseURL()}${endPoint}?${Helper.auth()}${Helper.urlBuilder(
-            urlParameters
-        )}`,
-           requestData
-     ).then(res => res.json());
+        return fetch(`${Helper.baseURL()}${endPoint}?${Helper.auth()}&${Helper.urlBuilder(urlParameters)}`,
+           requestData).then(res => res.json());
  }
 }
 export default class squareAPI {
