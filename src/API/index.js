@@ -53,14 +53,12 @@ export default class squareAPI {
         return Helper.simpleFetch(`/venues/${VENUE_ID}/photos`, "GET");  
     }
 }
-
-
+  
     
-    
-    /*GET https://api.foursquare.com/v2/venues/VENUE_ID
-    GET https://api.foursquare.com/v2/venues/VENUE_ID/similar
-
-    FOURSQUARE: 
+    /* 
+    GET https://api.foursquare.com/v2/venues/VENUE_ID 
+    Better to use GET https://api.foursquare.com/v2/venues/VENUE_ID/similar ?
+ FOURSQUARE: 
 Client ID
 V04AOMKZDTEANRKBVGOKDLEDTRV4WPGE54SIC0YAVYHPMPYF
 Client Secret

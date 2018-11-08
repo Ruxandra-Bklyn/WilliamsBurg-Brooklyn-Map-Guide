@@ -9,10 +9,8 @@ import squareAPI from "./API"
 class App extends Component {
     componentDidMount(){
         squareAPI.search({
-          near: "Biertan, Transylvania, Romania",
-          query: " biserica fortificata",
-          limit: 20
-          
+          "ll": "46.135187, 24.521308",
+          "query": "Fortified Church, Fortress"
             
         }).then(results => console.log(results));
     }
