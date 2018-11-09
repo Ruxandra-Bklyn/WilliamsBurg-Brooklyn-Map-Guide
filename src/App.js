@@ -15,17 +15,22 @@ class App extends Component {
                 zoom: 12
             };
     }
+    handleMarkerClick = marker => {
+        console.log(marker);
+        marker.isOpen = true;
+        this.setState({markers: Object.assign(this.state.markers, marker)});
+    };
         
         
     componentDidMount(){
         squareAPI.search({
           "ll": "40.708497166, -73.951996192",
-          "query": "bar happy hour",
+          "query": "bar",
             "limit": 30
             
         }).then(results => { 
             const { venues } = results.response;
-            const { markers }  = venues.map(venue => {
+            const markers  = venues.map(venue => {
                 return {
                     lat: venue.location.lat,
                     lng: venue.location.lng,
@@ -43,8 +48,9 @@ class App extends Component {
     return (
         
       <div className="App">
-        <div><h1>Williamsburg, Brooklyn: Map Guide</h1> </div>  
-        <MyMap {...this.state }/>
+        <div><h1>Bar Map Guide</h1> </div>  
+        <MyMap {...this.state }
+        handleMarkerClick={this.handleMarkerClick}/>
           </div>    
     );
   }
