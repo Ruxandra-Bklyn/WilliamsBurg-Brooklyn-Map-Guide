@@ -20,12 +20,12 @@ class App extends Component {
     componentDidMount(){
         squareAPI.search({
           "ll": "40.708497166, -73.951996192",
-          "query": "oysters, happy hour",
-            "limit": 20
+          "query": "bar happy hour",
+            "limit": 30
             
         }).then(results => { 
             const { venues } = results.response;
-            const  markers  = venues.map(venue => {
+            const { markers }  = venues.map(venue => {
                 return {
                     lat: venue.location.lat,
                     lng: venue.location.lng,
