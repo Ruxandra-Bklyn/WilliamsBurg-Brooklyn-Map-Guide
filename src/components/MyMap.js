@@ -24,12 +24,12 @@ const MyMapComponent = withScriptjs(
     <Marker 
        key={index} 
        position={{ lat: marker.lat, lng: marker.lng }}  
-       onclick={() => props.handleMarkerClick(marker )}
+       onClick={() => props.handleMarkerClick(marker)}
         >
        { marker.isOpen && (
                 
         <InfoWindow>
-        <p>Fun Bar</p>
+        <p>Open Sesame</p>
         </InfoWindow>
                 )}
     </Marker>

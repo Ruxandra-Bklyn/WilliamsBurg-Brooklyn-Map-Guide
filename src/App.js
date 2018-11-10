@@ -12,14 +12,25 @@ class App extends Component {
             this.state ={
                 venues: [],
                 markers:[],
-                zoom: 12
-            };
-    }
-    handleMarkerClick = marker => {
+                zoom: 14
+                        };
+                    }
+    
+    closeAllMarkers = () => {
+        const markers = this.state.markers.map(marker => {
+            marker.isOpen =false;
+            return marker;
+        });
+        this.setState({markers: Object.assign(this.state.markers, markers) });  
+    };
+    
+    handleMarkerClick = (marker) => {
+        this.closeAllMarkers();
         console.log(marker);
         marker.isOpen = true;
-        this.setState({markers: Object.assign(this.state.markers, marker)});
+        this.setState({markers: Object.assign(this.state.markers, marker) });
     };
+    
         
         
     componentDidMount(){
