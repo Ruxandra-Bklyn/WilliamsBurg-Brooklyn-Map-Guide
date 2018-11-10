@@ -1,10 +1,11 @@
 .App {
   text-align: center;
-    
-}
-
-.App {
   font-size: large;
+    /*
+    display: flex;
+
+*/
+
 }
 
 html, body {

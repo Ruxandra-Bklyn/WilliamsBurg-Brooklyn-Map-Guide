@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-//import locations from './data/locations.json';
 import MyMap from './components/MyMap';
-import squareAPI from "./API/index.js" 
+import Sidebar from './components/Sidebar';
+import squareAPI from './API/index.js' 
+
 
 
 class App extends Component {
@@ -68,7 +69,8 @@ class App extends Component {
     return (
         
       <div className="App">
-        <div><h1>Bar Map Guide</h1> </div>  
+        <div><h1>Bar Map Guide</h1></div> 
+          <Sidebar />
         <MyMap {...this.state }
         handleMarkerClick={this.handleMarkerClick}/>
           </div>    
