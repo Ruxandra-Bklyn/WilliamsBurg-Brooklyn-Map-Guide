@@ -29,8 +29,15 @@ class App extends Component {
         console.log(marker);
         marker.isOpen = true;
         this.setState({markers: Object.assign(this.state.markers, marker) });
+        const venue = this.state.venues.find(venue => venue.id === marker.id);
+        console.log(venue, "SINGLE VENUE");
+        
         squareAPI.getVenueDetails(marker.id)
-          .then(response => console.log(response));
+        .then(response => {
+        const newVenue = Object.assign(venue, response.response.venue);
+            this.setState({venues:Object.assign(this.state.venues, newVenue) });
+          console.log(newVenue);
+        });
     };
     
         
@@ -53,7 +60,6 @@ class App extends Component {
                 };
             });
             this.setState({venues, markers})
-            
             console.log(results);
     });
     }
