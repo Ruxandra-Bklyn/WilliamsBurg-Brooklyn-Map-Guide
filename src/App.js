@@ -29,6 +29,8 @@ class App extends Component {
         console.log(marker);
         marker.isOpen = true;
         this.setState({markers: Object.assign(this.state.markers, marker) });
+        squareAPI.getVenueDetails(marker.id)
+          .then(response => console.log(response));
     };
     
         
@@ -46,7 +48,8 @@ class App extends Component {
                     lat: venue.location.lat,
                     lng: venue.location.lng,
                     isOpen: false,
-                    isVisible: true 
+                    id: venue.id,
+                    isVisible: true
                 };
             });
             this.setState({venues, markers})
