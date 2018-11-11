@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ListVenues from './components/ListVenues';
+import BarList from './BarList';
 
 
 
@@ -7,7 +7,8 @@ export default class Sidebar extends Component {
     render() {
         return(
         <div className="sidebar">
-              <ListVenues />
+            <input type={"search"} id={"search"} placeholder = {"Search Bars"} />
+              <BarList {...this.props} />
         </div>
           
         )

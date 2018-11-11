@@ -53,7 +53,7 @@ export default class MyMap extends Component {
              {...this.props}
   googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMAfzFE8WfGm633IdIuvrRPbtQkuoga4s&v=3.exp&libraries=geometry,drawing,places"
   loadingElement={<div style={{ height: `100%` }} />}
-  containerElement={<div style={{ height: `600px` }} />}
+  containerElement={<div style={{ height: `100vh`, width: `100%` }} />}
   mapElement={<div style={{ height: `100%` }} />}
 />
         ); 

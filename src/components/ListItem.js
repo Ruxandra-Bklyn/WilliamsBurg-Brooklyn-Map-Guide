@@ -5,9 +5,9 @@ export default class ListItem extends Component {
     render() {
         return(
         <li className="listItem">
-            
-             test
+             {this.props.name}
         </li>
+    
         )
     }
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MyMap from './components/MyMap';
 import Sidebar from './components/Sidebar';
-import ListVenues from './components/ListVenues';
+import BarList from './components/BarList';
 import ListItem from './components/ListItem';
 import squareAPI from './API/index.js';
 
@@ -45,13 +45,15 @@ class App extends Component {
         });
     };
     
-        
+      handleListItemClick = venue =>  {
+          console.log(venue);
+      }
         
     componentDidMount(){
         squareAPI.search({
           "ll": "40.708497166, -73.951996192",
           "query": "bar",
-            "limit": 30
+            "limit": 15
             
         }).then(results => { 
             const { venues } = results.response;
@@ -73,8 +75,8 @@ class App extends Component {
     return (
         
       <div className="App">
-        <div><h1>Bar Map Guide</h1></div> 
-          <Sidebar />
+          <Sidebar {...this.state} />
+        
         <MyMap {...this.state }
         handleMarkerClick={this.handleMarkerClick}/>
           </div>    
