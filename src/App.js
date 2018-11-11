@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import MyMap from './components/MyMap';
 import Sidebar from './components/Sidebar';
-import squareAPI from './API/index.js' 
+import ListVenues from './components/ListVenues';
+import ListItem from './components/ListItem';
+import squareAPI from './API/index.js';
+
+
 
 
 
