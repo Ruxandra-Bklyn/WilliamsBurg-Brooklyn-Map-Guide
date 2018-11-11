@@ -6,10 +6,6 @@ import BarList from './components/BarList';
 import ListItem from './components/ListItem';
 import squareAPI from './API/index.js';
 
-
-
-
-
 class App extends Component {
     
     constructor() {
@@ -17,9 +13,12 @@ class App extends Component {
             this.state ={
                 venues: [],
                 markers:[],
-                zoom: 14
-                        };
-                    }
+                zoom: 14,
+                updateState: object => {
+                this.setState(object);
+             }
+           };
+        }
     
     closeAllMarkers = () => {
         const markers = this.state.markers.map(marker => {
@@ -46,6 +45,8 @@ class App extends Component {
     };
     
       handleListItemClick = venue =>  {
+          const marker = this.state.markers.find(marker =>marker.id === venue.id);
+          this.handleMarkerClick(marker);
           console.log(venue);
       }
         
@@ -75,7 +76,10 @@ class App extends Component {
     return (
         
       <div className="App">
-          <Sidebar {...this.state} />
+          <Sidebar 
+         {...this.state} 
+        handleListItemClick={this.handleListItemClick}
+        />
         
         <MyMap {...this.state }
         handleMarkerClick={this.handleMarkerClick}/>

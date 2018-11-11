@@ -19,12 +19,16 @@ const MyMapComponent = withScriptjs(
     {props.markers && 
      props.markers
            .filter(marker => marker.isVisible)
-           .map((marker,index) => {
+           .map((marker,index,array) => {
      const venueInfo = props.venues.find(venue =>venue.id===marker.id);
-     return <Marker 
+     return (
+     
+         <Marker 
        key={index} 
        position={{ lat: marker.lat, lng: marker.lng }}  
        onClick={() => props.handleMarkerClick(marker)}
+        animation= {
+                array.length === 1 ? window.google.maps.Animation.DROP : window.google.maps.Animation.DROP }
         >
        { marker.isOpen && 
          venueInfo.bestPhoto && (
@@ -32,12 +36,17 @@ const MyMapComponent = withScriptjs(
         <InfoWindow>
                <React.Fragment>
                <img
-               src= {`${venueInfo.bestPhoto.prefix}150x150${venueInfo.bestPhoto.suffix}`} alt={"Venue Image"}/>
+               src= {`${venueInfo.bestPhoto.prefix}150x150${
+                venueInfo.bestPhoto.suffix}`} 
+                alt={"Venue Image"}
+            />
+
                <p>{venueInfo.name}</p>
                </React.Fragment>
         </InfoWindow>
                 )}
     </Marker>
+);
    })}
     
    </GoogleMap>

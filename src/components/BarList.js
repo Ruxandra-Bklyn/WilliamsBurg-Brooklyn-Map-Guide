@@ -9,7 +9,9 @@ export default class BarList extends Component {
         <ul className="barList">
             {this.props.venues && 
             this.props.venues.map((venue, index) => 
-            <ListItem key={index} {...venue }/>)}
+            <ListItem 
+               key={index}
+               {...venue } handleListItemClick={this.props.handleListItemClick} />)}
 
       </ul>
         )
