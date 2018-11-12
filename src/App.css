@@ -3,7 +3,7 @@
   font-size: large;
   height: 100vh;
   width: 100%;
-    display: flex;
+  display: flex;
 }
 
 html, body {
@@ -20,10 +20,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 .sidebar {
-    width: 25%;
-    margin-right: 15px;
-    margin-left: 0;
-    
+    display: block;
+    width: 20%;
+    margin-right: 10px;  
+    color: #fff;
 }
 
 li.listItem {
@@ -31,8 +31,7 @@ li.listItem {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     padding: 5px;
     cursor: pointer;
-    background-color: #006666;
+    background-color: #656172;
     list-style: none;
-    color: #fff;
     align-items: center;
 }
